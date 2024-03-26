@@ -19,7 +19,6 @@ def pokemonLookup(pokemon):
     else:
         return {"success": False, "message": response.status_code, "data": None}
 
-
 def abilityLookup(ability):
     response = requests.get("https://pokeapi.co/api/v2/ability/" + ability)
     data = response.json()
@@ -34,3 +33,4 @@ def abilityLookup(ability):
         return {"success": True, "message": "success", "data": parsed_data}
     else:
         return {"success": False, "message": response.status_code, "data": None}
+
