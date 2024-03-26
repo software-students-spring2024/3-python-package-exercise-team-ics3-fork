@@ -2,4 +2,4 @@ import requests
 
 
 def lookup():
-    return ""
+    return {}
