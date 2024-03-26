@@ -25,5 +25,3 @@ def generate_pokemon(gen = 0, seed = 0):
         "abilities": rawData["abilities"]
     }
     return {"success": True, "message": "success", "data": pokemonData}
-
-print(generate_pokemon(4))
