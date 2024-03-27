@@ -1,7 +1,10 @@
 README.md
 pyproject.toml
+simplepokedex/LICENSE
+simplepokedex/README.md
 simplepokedex/generatePokemon.py
 simplepokedex/lookup.py
+simplepokedex/pokedex.py
 simplepokedex/poketypes.py
 simplepokedex.egg-info/PKG-INFO
 simplepokedex.egg-info/SOURCES.txt
