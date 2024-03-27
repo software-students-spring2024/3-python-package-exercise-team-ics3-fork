@@ -8,6 +8,6 @@ This python package is a simple Pokedex that is able to generate a random Pokede
 
 # Team Members
 
-[Eric Lin]('https://github.com/exl7954')
+[Eric Lin](https://github.com/exl7954)
 [Alice Ding](https://github.com/ayd2134)
 [Justin Zhao](https://github.com/zhaojustin)
