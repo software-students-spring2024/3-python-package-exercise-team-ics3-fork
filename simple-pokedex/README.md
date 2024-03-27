@@ -12,6 +12,10 @@ This python package is a simple Pokedex that is able to generate a random Pokede
 
 # Implementation
 
+To install, use `pip install simple-pokedex`.
+
+To import, use `import simple-pokedex`
+
 # Team Members
 
 - [Eric Lin](https://github.com/exl7954)
