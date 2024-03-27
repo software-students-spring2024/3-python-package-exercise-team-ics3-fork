@@ -34,16 +34,3 @@ def abilityLookup(ability=""):
         return {"success": True, "message": "success", "data": parsed_data}
     else:
         return {"success": False, "message": response.status_code, "data": None}
-
-
-print(abilityLookup(""))
-print("--")
-
-print(abilityLookup("minecraft"))
-
-print("--")
-
-print(abilityLookup("moxie"))
-
-print("--")
-print(abilityLookup("intimidate"))
