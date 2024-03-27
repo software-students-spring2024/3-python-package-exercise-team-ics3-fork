@@ -1,6 +1,6 @@
 import sys
 
-sys.path.insert(1, "./src/simple-pokedex")
+sys.path.insert(1, "./simple-pokedex")
 
 import lookup
 
