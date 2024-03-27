@@ -1,7 +1,7 @@
 import requests
 
 
-def pokemonLookup(pokemon):
+def pokemonLookup(pokemon=""):
     response = requests.get("https://pokeapi.co/api/v2/pokemon/" + pokemon)
     if response.status_code == 200:
         data = response.json()
@@ -19,18 +19,31 @@ def pokemonLookup(pokemon):
     else:
         return {"success": False, "message": response.status_code, "data": None}
 
-def abilityLookup(ability):
+
+def abilityLookup(ability=""):
+    if ability == "":
+        return {"success": False, "message": 400, "data": None}
     response = requests.get("https://pokeapi.co/api/v2/ability/" + ability)
-    data = response.json()
-
-    # parse data
-    parsed_data = ""
-    for item in data["effect_entries"]:
-        if item["language"]["name"] == "en":
-            parsed_data = item["effect"]
-
     if response.status_code == 200:
+        data = response.json()
+        # parse data
+        parsed_data = ""
+        for item in data["effect_entries"]:
+            if item["language"]["name"] == "en":
+                parsed_data = item["effect"]
         return {"success": True, "message": "success", "data": parsed_data}
     else:
         return {"success": False, "message": response.status_code, "data": None}
 
+
+print(abilityLookup(""))
+print("--")
+
+print(abilityLookup("minecraft"))
+
+print("--")
+
+print(abilityLookup("moxie"))
+
+print("--")
+print(abilityLookup("intimidate"))
