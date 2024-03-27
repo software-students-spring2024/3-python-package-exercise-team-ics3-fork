@@ -1,6 +1,7 @@
 from simplepokedex import pokedex
 
 def main():
+    #example code
     print("Piplup's type is: ")
     print(pokedex.pokemonLookup("piplup")['data']['name'])
 
